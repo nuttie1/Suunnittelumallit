@@ -1,0 +1,2 @@
+# Suunnittelumallit
+Suunnittelumallit kurssin tehtävät
