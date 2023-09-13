@@ -1,21 +1,21 @@
 package Assignments.AbstractFactory;
 
-import Assignments.AbstractFactory.Clothing.Cap;
-import Assignments.AbstractFactory.Clothing.Jeans;
-import Assignments.AbstractFactory.Clothing.Shirt;
-import Assignments.AbstractFactory.Clothing.Shoes;
-import Assignments.AbstractFactory.Factories.Factory;
+import Assignments.AbstractFactory.Clothing.ICap;
+import Assignments.AbstractFactory.Clothing.IJeans;
+import Assignments.AbstractFactory.Clothing.IShirt;
+import Assignments.AbstractFactory.Clothing.IShoes;
+import Assignments.AbstractFactory.Factories.IFactory;
 
 public class Jasper {
-    private Factory factory;
-    private Cap cap;
-    private Shirt shirt;
-    private Jeans jeans;
-    private Shoes shoes;
+    private IFactory factory;
+    private ICap cap;
+    private IShirt shirt;
+    private IJeans jeans;
+    private IShoes shoes;
 
     public Jasper() {}
 
-    public void setFactory(Factory factory) {
+    public void setFactory(IFactory factory) {
         this.factory = factory;
     }
 

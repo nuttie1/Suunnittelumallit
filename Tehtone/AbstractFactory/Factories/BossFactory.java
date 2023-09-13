@@ -4,29 +4,29 @@ import Assignments.AbstractFactory.Clothing.Boss.BossCap;
 import Assignments.AbstractFactory.Clothing.Boss.BossJeans;
 import Assignments.AbstractFactory.Clothing.Boss.BossShirt;
 import Assignments.AbstractFactory.Clothing.Boss.BossShoes;
-import Assignments.AbstractFactory.Clothing.Cap;
-import Assignments.AbstractFactory.Clothing.Jeans;
-import Assignments.AbstractFactory.Clothing.Shirt;
-import Assignments.AbstractFactory.Clothing.Shoes;
+import Assignments.AbstractFactory.Clothing.ICap;
+import Assignments.AbstractFactory.Clothing.IJeans;
+import Assignments.AbstractFactory.Clothing.IShirt;
+import Assignments.AbstractFactory.Clothing.IShoes;
 
-public class BossFactory implements Factory{
+public class BossFactory implements IFactory {
     @Override
-    public Cap createCap() {
+    public ICap createCap() {
         return new BossCap();
     }
 
     @Override
-    public Shirt createShirt() {
+    public IShirt createShirt() {
         return new BossShirt();
     }
 
     @Override
-    public Jeans createJeans() {
+    public IJeans createJeans() {
         return new BossJeans();
     }
 
     @Override
-    public Shoes createShoes() {
+    public IShoes createShoes() {
         return new BossShoes();
     }
 }

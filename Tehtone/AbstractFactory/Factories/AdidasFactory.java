@@ -4,29 +4,29 @@ import Assignments.AbstractFactory.Clothing.Adidas.AdidasCap;
 import Assignments.AbstractFactory.Clothing.Adidas.AdidasJeans;
 import Assignments.AbstractFactory.Clothing.Adidas.AdidasShirt;
 import Assignments.AbstractFactory.Clothing.Adidas.AdidasShoes;
-import Assignments.AbstractFactory.Clothing.Cap;
-import Assignments.AbstractFactory.Clothing.Jeans;
-import Assignments.AbstractFactory.Clothing.Shirt;
-import Assignments.AbstractFactory.Clothing.Shoes;
+import Assignments.AbstractFactory.Clothing.ICap;
+import Assignments.AbstractFactory.Clothing.IJeans;
+import Assignments.AbstractFactory.Clothing.IShirt;
+import Assignments.AbstractFactory.Clothing.IShoes;
 
-public class AdidasFactory implements Factory{
+public class AdidasFactory implements IFactory {
     @Override
-    public Cap createCap() {
+    public ICap createCap() {
         return new AdidasCap();
     }
 
     @Override
-    public Shirt createShirt() {
+    public IShirt createShirt() {
         return new AdidasShirt();
     }
 
     @Override
-    public Jeans createJeans() {
+    public IJeans createJeans() {
         return new AdidasJeans();
     }
 
     @Override
-    public Shoes createShoes() {
+    public IShoes createShoes() {
         return new AdidasShoes();
     }
 }

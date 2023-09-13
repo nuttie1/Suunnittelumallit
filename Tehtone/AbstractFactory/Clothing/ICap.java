@@ -1,5 +1,5 @@
 package Assignments.AbstractFactory.Clothing;
 
-public interface Shoes {
-    String toString();
+public interface ICap {
+     String toString();
 }

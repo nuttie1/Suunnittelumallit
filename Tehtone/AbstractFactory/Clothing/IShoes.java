@@ -1,5 +1,5 @@
 package Assignments.AbstractFactory.Clothing;
 
-public interface Shirt {
+public interface IShoes {
     String toString();
 }
