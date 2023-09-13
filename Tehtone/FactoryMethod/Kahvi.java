@@ -1,4 +1,4 @@
-package factorymethod;
+package Assignments.FactoryMethod;
 
 public class Kahvi implements Juoma{
     public String toString(){

@@ -1,4 +1,4 @@
-package factorymethod;
+package Assignments.FactoryMethod;
 
 public class Rakennustyontekija extends AterioivaOtus {
     @Override
