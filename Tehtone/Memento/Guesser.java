@@ -1,10 +1,10 @@
 package Assignments.Memento;
 
-public class Customer extends Thread {
+public class Guesser extends Thread {
     private final Riddler riddler;
     private final Memento memento;
 
-    public Customer(Riddler riddler) {
+    public Guesser(Riddler riddler) {
         this.riddler = riddler;
         this.memento = riddler.joinTheGame();
     }

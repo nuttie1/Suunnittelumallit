@@ -5,7 +5,7 @@ public class Main {
         Riddler riddler = new Riddler();
 
         for (int i = 0; i < 5; i++) {
-            new Customer(riddler).start();
+            new Guesser(riddler).start();
         }
     }
 }
