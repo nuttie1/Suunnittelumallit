@@ -1,6 +1,6 @@
 package Assignments.Builder;
 
-public class McDonaldsBuilder extends BurgerBuilder {
+public class McDonaldsBuilder implements BurgerBuilder {
     private StringBuilder burgerParts = new StringBuilder();
 
     public void cleanKitchen() {

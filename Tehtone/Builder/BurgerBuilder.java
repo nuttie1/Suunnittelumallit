@@ -1,10 +1,10 @@
 package Assignments.Builder;
 
-public abstract class BurgerBuilder {
-    abstract void cleanKitchen();
-    abstract void addSalad();
+interface BurgerBuilder {
+    void cleanKitchen();
+    void addSalad();
 
-    abstract void addPatty();
+    void addPatty();
 
-    abstract Object getBurger();
+    Object getBurger();
 }

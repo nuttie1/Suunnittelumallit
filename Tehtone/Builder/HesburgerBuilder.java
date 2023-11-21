@@ -3,7 +3,7 @@ package Assignments.Builder;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HesburgerBuilder extends BurgerBuilder {
+public class HesburgerBuilder implements BurgerBuilder {
     private List<BurgerPart> burgerParts = new ArrayList<>();
 
     public void cleanKitchen() {
