@@ -1,4 +1,4 @@
-package Assignments.Memento;
+package Assignments.Memento.ProtectivePackage;
 
 public class Memento {
     private final int randNum;
@@ -7,7 +7,8 @@ public class Memento {
         this.randNum = randNum;
     }
 
-    public int getRandNum() {
+    // Guesser can't access the randnum but Riddler can.
+    protected int getRandNum() {
         return randNum;
     }
 }
